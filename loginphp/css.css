@@ -1,0 +1,13 @@
+.space{
+	
+	padding: 10px;
+}
+
+.show-content{
+
+	display:inline-flex;
+}
+
+.hide-content{
+	display:none;
+}
