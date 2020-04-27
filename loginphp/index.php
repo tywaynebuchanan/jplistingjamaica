@@ -2,10 +2,7 @@
 if(isset($_SESSION['login_user'])){
   header("location:landing.php");
 }
-
-
 ?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,10 +14,7 @@ if(isset($_SESSION['login_user'])){
 </head>
 <body>
 
-
-
-
-  <section class="hero is-link is-fullheight">
+<section class="hero is-link is-fullheight">
   <div class="hero-body is-success ">
     <div class="container has-text-centered">
         <div class="column is-4 is-offset-4">
@@ -73,27 +67,23 @@ if(isset($_SESSION['login_user'])){
               <p class="control">
                 <button class="button is-block is-info is-large is-fullwidth" name="submit" onclick="return showError()">
                   Login
+                  <i class="fas fa-sign-in-alt"></i>
+                </span>
                 </button>
               </p>
             </form>
           </div>
           <div class="space has-text">
-<p class="has-text-light">
-                        <a href="../">Sign Up</a> &nbsp;·&nbsp;
-                        <a href="../">Forgot Password</a> &nbsp;·&nbsp;
-                        <a href="../">Need Help?</a>
+            <p class="has-text-light">
+                        <a href="#">Sign Up</a> &nbsp;·&nbsp;
+                        <a href="#">Forgot Password</a> &nbsp;·&nbsp;
+                        <a href="#">Need Help?</a>
                     </p>
         </div>
         </div>
-
-        </div>
-        
+        </div> 
     </div>
-  
-          
-
-
-</section>
+  </section>
 </div>
 </body>
 </html>

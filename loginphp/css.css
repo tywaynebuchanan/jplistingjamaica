@@ -11,3 +11,12 @@
 .hide-content{
 	display:none;
 }
+
+.no-space{
+	padding: 0px;
+	margin: 0px;
+}
+
+.footer {
+ padding-top: 60px;
+}
