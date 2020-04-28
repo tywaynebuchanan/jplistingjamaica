@@ -1,4 +1,4 @@
-<?php include ('registeruser.php')
+<?php include ('functions/registeruser.php')
 
 
 ?>

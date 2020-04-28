@@ -1,5 +1,5 @@
 <?php 
-include ('registeruser.php');
+include ('functions/registeruser.php');
 ?>
 <!DOCTYPE html>
 <html>

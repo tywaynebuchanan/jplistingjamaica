@@ -1,5 +1,4 @@
-<?php include ('login.php');
-?>
+
 <!DOCTYPE html>
 <html>
 <head>

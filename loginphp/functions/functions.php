@@ -20,8 +20,9 @@ if (isset($_POST['submit'])) {
 						. $row["FirstName"]. "</td><td>".$row["Address"]. "</td><td>". $row["City"]."</td><td>". $row["PhoneNumber"].'</td><td class = "bg-primary"><button class = "btn btn-primary btn-lg btn-block btn-sm" type ="submit">'.$row["Status"].'</button></td></tr>';
 					echo "</table>";
 			}else{
-				echo '<div class="alert alert-primary" role="alert">
-                  <strong></strong>There is no Justice of the Peace by the name of <strong>'.strtoupper($_POST['keyword']).'</strong></div>';	 
+				echo '<div class="space">
+				<div class="alert alert-primary " role="alert">
+                  <strong></strong>There is no Justice of the Peace by the name of <strong>'.strtoupper($_POST['keyword']).'</strong></div></div>';	 
 			}
 
 			}
