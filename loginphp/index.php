@@ -1,4 +1,4 @@
-<?php include ('login.php');
+<?php include ('functions/login.php');
 if(isset($_SESSION['login_user'])){
   header("location:landing.php");
 }
