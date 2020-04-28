@@ -14,6 +14,7 @@ if(isset($_POST['submit'])){
 		// Define username and password 
 		$username = $_POST['username'];
 		$password = $_POST['password'];
+		$user_name = "";
 		
 		//Statements to prevent hackers from hacking your site
 		$username = mysqli_real_escape_string($conn,$username);
@@ -29,8 +30,6 @@ if(isset($_POST['submit'])){
             {
 				$_SESSION['login_user'] = $username;
 				header("location:landing.php");
-			
-
 		}else{ 
 			echo'<div class = "no-space">
               <div class="notification is-warning has-text-centered">

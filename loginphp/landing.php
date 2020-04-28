@@ -14,6 +14,7 @@ if(!isset($_SESSION['login_user'])){
     <title>Justice of The Peace</title>
     <link rel="stylesheet" type="text/css" href="css/landing.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 </head>
 <body>
 
@@ -54,12 +55,31 @@ if(!isset($_SESSION['login_user'])){
       </li>
       
     </ul>
-    <a class="nav-link text-light" href="#">
-  User Logged in: <?php echo $login_session ?>
-     </a>
-    <a class="btn btn-outline-light my-2 my-sm-0" href="logout.php">Logout</a>
+<div class="btn-group dropleft">
+    <button class="btn btn-outline-light btn-primary dropdown-toggle"  href="#"  role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+   <i class="fas fa-user"></i> View Profile 
+     </button>
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <div class="dropdown-menu">
+    <div class="card-body">
+      <h5 class="card-title"><?php UserInfo(); ?></h5>
+      <p class=""><?php echo $login_session ?></p>
+       <ul class="list-group list-group-flush">
+        <li class="list-group-item">Manage Profile</li>
+      </ul>
+    </div>
+    <div class="card-footer">
+      <a class="btn btn-outline-primary" href="logout.php">Logout</a>
   </div>
+    </div>  
+  </div>
+</div>
+</div>
+</div>
 </nav> 
+
+
 <div class="space">
 <div class="jumbotron">
   <h1 class="display-4">Justice of the Peace</h1>
@@ -115,6 +135,12 @@ if(!isset($_SESSION['login_user'])){
             </div>
      </footer>
 </div>
+
+
+
+
+
+ 
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

@@ -40,4 +40,20 @@ function TotalJP(){
 }
 
 
+
+function UserInfo(){
+
+	include  'config/dbconn.php';
+	$username = $_SESSION['login_user'];
+
+	$query = $conn->query("SELECT * FROM users WHERE username = '$username';");
+	if ($query->num_rows > 0){
+	while ($row = $query->fetch_assoc())
+		echo $row['user_name'];
+
+}
+}
+
 ?>
+
+
