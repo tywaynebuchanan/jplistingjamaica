@@ -1,4 +1,5 @@
-<?php include ('login.php');
+<?php 
+include ('registeruser.php');
 ?>
 <!DOCTYPE html>
 <html>
@@ -17,16 +18,13 @@
         <div class="column is-4 is-offset-4">
           <div class="box">
           <h3 class="title has-text-link">JP Verify Registration Form</h3>
-         
             <hr class="login-hr">
             <p class="subtitle has-text-black">Let's get you signed up</p>
-            
             <form action="" method="POST">
-            
             <div class="field">
-              <label class="label has-text-left">Please enter your First Name</label>
+              <label class="label has-text-left">Please enter your Full Name</label>
               <p class="control has-icons-left has-icons-right">
-                <input class="input is-rounded" type="text"  id="name" name="name" placeholder="Please enter your full name eg. John Smith" onchange="UpdateUser()">
+                <input class="input is-rounded" type="text"  id="name" name="name" placeholder="Please enter your full name eg. John Smith">
                 <span class="icon is-small is-left">
                   <i class="fas fa-user"></i>
                 </span>
@@ -116,7 +114,7 @@
 
             <div class="field">
               <p class="control">
-                <button class="button is-block is-info is-fullwidth" name="submit" onclick="return showError()">
+                <button class="button is-block is-info is-fullwidth" name="submit">
                   Register
                  <i class="fas fa-clipboard-check"></i>
                 </span>

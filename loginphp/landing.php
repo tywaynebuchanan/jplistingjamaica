@@ -52,8 +52,7 @@ if(!isset($_SESSION['login_user'])){
           <a class="dropdown-item" href="#">Westmoreland</a>
           <a class="dropdown-item" href="#">Hanover</a>
         </div>
-      </li>
-      
+      </li> 
     </ul>
 <div class="btn-group dropleft">
     <button class="btn btn-outline-light btn-primary dropdown-toggle"  href="#"  role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -61,25 +60,18 @@ if(!isset($_SESSION['login_user'])){
      </button>
     <span class="sr-only">Toggle Dropdown</span>
   </button>
-  <div class="dropdown-menu">
+  <div class="dropdown-menu text-center">
     <div class="card-body">
       <h5 class="card-title"><?php UserInfo(); ?></h5>
       <p class=""><?php echo $login_session ?></p>
-       <ul class="list-group list-group-flush">
-        <li class="list-group-item">Manage Profile</li>
-      </ul>
+        <a class = "btn btn-outline-primary rounded-pill" href ="#">Manage Profile</a>
     </div>
-    <div class="card-footer">
-      <a class="btn btn-outline-primary" href="logout.php">Logout</a>
-  </div>
-    </div>  
-  </div>
+      <a class="btn btn-outline-primary rounded-pill" href="logout.php">Logout</a>
+    </div> 
 </div>
 </div>
 </div>
 </nav> 
-
-
 <div class="space">
 <div class="jumbotron">
   <h1 class="display-4">Justice of the Peace</h1>
