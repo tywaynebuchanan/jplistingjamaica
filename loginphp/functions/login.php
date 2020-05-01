@@ -14,7 +14,7 @@ if(isset($_POST['submit'])){
 		// Define username and password 
 		$username = $_POST['username'];
 		$password = $_POST['password'];
-		$user_name = "";
+		$_SESSION['time_login'] = time();
 		
 		//Statements to prevent hackers from hacking your site
 		$username = mysqli_real_escape_string($conn,$username);

@@ -8,11 +8,14 @@
     <link rel="stylesheet" type="text/css" href="css.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <script src="js/script.js"></script>
 </head>
 <body>
 
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <a class="navbar-brand" href="index.php">Justice of the Peace</a>
+  <div class="container">
+  <a class="navbar-brand" href="landing.php">Justice of the Peace</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -47,9 +50,9 @@
         </div>
       </li> 
     </ul>
-<div class="btn-group dropleft">
+<div class="btn-group">
     <button class="btn btn-outline-light btn-primary dropdown-toggle"  href="#"  role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-   <i class="fas fa-user"></i> View Profile 
+   <i class="fas fa-user"></i> View Profile  <?php echo $login_session ?>
      </button>
     <span class="sr-only">Toggle Dropdown</span>
   </button>

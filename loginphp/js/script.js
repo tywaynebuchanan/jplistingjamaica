@@ -52,3 +52,9 @@ function NoInput(){
 
 	document.getElementById("no-input").style.display = 'none';
 }
+
+function ViewProfile(){
+
+	var element = document.getElementById("modal");
+	element.style.display = 'flex';
+}

@@ -24,7 +24,7 @@ include ('functions/registeruser.php');
             <div class="field">
               <label class="label has-text-left">Please enter your Full Name</label>
               <p class="control has-icons-left has-icons-right">
-                <input class="input is-rounded" type="text"  id="name" name="name" placeholder="Please enter your full name eg. John Smith">
+                <input class="input is-rounded" type="text"  id="name" name="name" required placeholder="Please enter your full name eg. John Smith">
                 <span class="icon is-small is-left">
                   <i class="fas fa-user"></i>
                 </span>
@@ -36,7 +36,7 @@ include ('functions/registeruser.php');
              <div class="field">
               <label class="label has-text-left">Please enter your Email Address</label>
               <p class="control has-icons-left has-icons-right">
-                <input class="input is-rounded" type="email"  id="email" name="email" placeholder="eg.johnsmith@mail.com" onchange="UpdateUser()">
+                <input class="input is-rounded" type="email"  id="email" name="email" required placeholder="eg.johnsmith@mail.com" onchange="UpdateUser()">
                 <span class="icon is-small is-left">
                   <i class="fas fa-envelope-open-text"></i>
                 </span>
@@ -53,7 +53,7 @@ include ('functions/registeruser.php');
             <div class="field">
               <label class="label has-text-left">Please enter your password</label>
               <p class="control has-icons-left">
-                <input class="input is-rounded" type="password" id="password" name="password" placeholder="Password">
+                <input class="input is-rounded" type="password" id="password" required name="password" placeholder="Password">
                 <span class="icon is-small is-left">
                   <i class="fas fa-lock"></i>
                 </span>
@@ -63,7 +63,7 @@ include ('functions/registeruser.php');
             <div class="field">
               <label class="label has-text-left">Please re-enter your password</label>
               <p class="control has-icons-left">
-                <input class="input is-rounded" type="password" id="conpassword" name="conpassword" placeholder="Re-enter Password">
+                <input class="input is-rounded" type="password" id="conpassword" name="conpassword" placeholder="Re-enter Password" required>
                 <span class="icon is-small is-left">
                   <i class="fas fa-lock"></i>
                 </span>

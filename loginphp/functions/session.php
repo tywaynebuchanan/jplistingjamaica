@@ -1,7 +1,5 @@
 <?php include ('config/dbconn.php');
 
-// New connection to db 
-//$conn = mysqli_connect("localhost","root","","listing");
 
 // Start Session 
 session_start();
