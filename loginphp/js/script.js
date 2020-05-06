@@ -6,7 +6,7 @@ function showError(){
 	var username = document.getElementById("username");
 	var password = document.getElementById("password");
 
-	if(!username.value && !password.value)
+if(!username.value && !password.value)
 	{ 
 		error.style.display = 'inline-flex';
 		username.classList.toggle("is-danger");
@@ -15,7 +15,7 @@ function showError(){
 
 	} 
 
-	if(!username.value){
+if(!username.value){
 
 		error_uname.style.display = "inline";
 		username.classList.toggle("is-danger");
@@ -23,12 +23,14 @@ function showError(){
 
 	} 
 
-	if(!password.value){
+if(!password.value){
 		error_pass.style.display = "inline";
 		password.classList.toggle("is-danger");
 		return false;
 
 }
+
+
 
 }
 
@@ -48,9 +50,9 @@ function UpdatePwd(){
 	psd.classList.toggle("is-valid");
 }
 
-function NoInput(){
-
-	document.getElementById("no-input").style.display = 'none';
+function CheckPassword(){
+var pass = document.getElementById("password");
+alert('This works');
 }
 
 function ViewProfile(){

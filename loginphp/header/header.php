@@ -25,9 +25,7 @@
       <li class="nav-item active">
         <a class="nav-link" href="landing.php"> Home<span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">About Us</a>
-      </li>
+     
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
           Parishes
@@ -49,6 +47,10 @@
           <a class="dropdown-item" href="#">Hanover</a>
         </div>
       </li> 
+       <li class="nav-item">
+        <a class="nav-link" href="#">About Us</a>
+      </li>
+
     </ul>
 <div class="btn-group">
     <button class="btn btn-outline-light btn-primary dropdown-toggle"  href="#"  role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

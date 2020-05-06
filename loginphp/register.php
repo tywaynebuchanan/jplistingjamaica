@@ -53,11 +53,18 @@ include ('functions/registeruser.php');
             <div class="field">
               <label class="label has-text-left">Please enter your password</label>
               <p class="control has-icons-left">
-                <input class="input is-rounded" type="password" id="password" required name="password" placeholder="Password">
+                <input class="input is-rounded" type="password" id="password"  name="password" placeholder="Password" onchange="CheckPassword()">
                 <span class="icon is-small is-left">
                   <i class="fas fa-lock"></i>
                 </span>
               </p>
+            </div>
+
+            <div class="hide-content space" id="passwordcheck">
+              <div class="notification is-danger">
+                <button class="delete"></button>
+                <strong>Opp!</strong> Your password is not strong
+              </div>
             </div>
 
             <div class="field">

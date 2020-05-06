@@ -13,9 +13,7 @@ if (isset($_REQUEST['name'])){
  
  $password = stripslashes($_REQUEST['password']);
  $password = mysqli_real_escape_string($conn,$password);
- //$conpassword = stripslashes($_REQUEST['conpassword']);
- //$conpassword = mysqli_real_escape_string($conn,$conpassword);
- //$trn_date = date("Y-m-d H:i:s");
+
         $query = "INSERT into `users` (username, userpassword, user_name)
 VALUES ('$username', '$password', '$name')";
         $result = mysqli_query($conn,$query);
