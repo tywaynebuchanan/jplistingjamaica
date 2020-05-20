@@ -1,3 +1,4 @@
+<?php ob_start();?>
 <?php include ('functions/session.php');
       include ('functions/functions.php');
       include ('header/header.php');
@@ -5,7 +6,7 @@ if(!isset($_SESSION['login_user'])){
   header("location:index.php");
 
 }else {
-  if((time() - $_SESSION['time_login']) > 30)
+  if((time() - $_SESSION['time_login']) > 60)
   {
     header("location:functions/logout.php");
     echo '<div class="space">

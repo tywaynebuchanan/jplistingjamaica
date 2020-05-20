@@ -1,3 +1,4 @@
+<?php ob_start();?>
 <?php include ('functions/session.php');
       include ('functions/functions.php');
       include ('header/header.php');
