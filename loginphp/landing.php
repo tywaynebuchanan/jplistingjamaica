@@ -23,6 +23,7 @@ if(!isset($_SESSION['login_user'])){
   <h1 class="display-4">Justice of the Peace</h1>
   <p class="lead">This is a simple website that helps you to search for a Justice of the peace in Jamaica. </p>
   <p>Currently, the only listing available is the parish of <strong>St Catherine</strong>,<strong>Clarendon</strong> and <strong>Hanover</strong></p>
+  
 </div>
 </div>
 
