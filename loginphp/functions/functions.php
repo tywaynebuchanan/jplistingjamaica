@@ -1,8 +1,90 @@
 <?php include ('config/dbconn.php');
 
-$page = "";
+
+// function Pagination(){
+// include 'config/dbconn.php';
+// global $page_1;
+
+// if(isset($_GET['page'])){
+
+// 	$page = $_GET['page'];
+
+// }else{
+
+// 	$page = "";
+
+// }
+
+// if($page == ""|| $page == 1)
+// {
+// 	$page_1 = 0;
+// }else{
+
+// 	$page_1 = ($page * 5) - 5;
+// }
+// // Query to find out how many Justice of the Peace exist in search
+// 			$jpcount = "SELECT * FROM  tbljusticeinfo";
+// 			$result = mysqli_query($conn,$jpcount);
+// 			$countjp = mysqli_num_rows($result);
+// 			$countjp = ceil($countjp / 100);
+// 			echo $countjp;
+
+// 	echo '<div class="container">
+// <nav aria-label="Page navigation example">
+//   <ul class="pagination justify-content-center">';
+
+// for($i=1; $i<= $countjp; $i++){
+
+// 	echo"
+// 	<li class='page-item'><a class='page-link' href='searchresults.php?page={$i}'>{$i}</a></li>";
+// }
+// echo '</ul>
+// </nav></div>';
+
+
+
+// }
 function SearchJP(){
 		global $conn;
+
+// if(isset($_GET['page'])){
+
+// 	$page = $_GET['page'];
+
+// }else{
+
+// 	$page = "";
+
+// }
+
+// if($page == ""|| $page == 1)
+// {
+// 	$page_1 = 0;
+// }else{
+
+// 	$page_1 = ($page * 5) - 5;
+// }
+// // Query to find out how many Justice of the Peace exist in search
+// 			$jpcount = "SELECT * FROM tbljusticeinfo ";
+// 			$result = mysqli_query($conn,$jpcount);
+// 			$countjp = mysqli_num_rows($result);
+// 			$countjp = ceil($countjp / 100);
+// 			echo $countjp;
+
+// 	echo '<div class="container">
+// <nav aria-label="Page navigation example">
+//   <ul class="pagination justify-content-center">';
+
+// for($i=1; $i<= $countjp; $i++){
+
+// 	echo"
+// 	<li class='page-item'><a class='page-link' href='searchresults.php?page={$i}'>{$i}</a></li>";
+// }
+// echo '</ul>
+// </nav></div>';
+
+// }
+
 if(empty($_POST['keyword'])){
 
 	echo '<div class="space">
@@ -12,11 +94,14 @@ if(empty($_POST['keyword'])){
 } else {
 
 if (isset($_POST['submit'])) {
+			
 			$q = $conn->real_escape_string($_POST['keyword']);
 
+			$sql = $conn->query("SELECT ID,LastName, FirstName,Address,City,Parish,PhoneNumber, Status FROM tbljusticeinfo WHERE CONCAT_WS('',FirstName,LastName) LIKE '%$q%' OR CONCAT_WS('',LastName,FirstName) LIKE '%$q%' OR CONCAT_WS('',LastName,FirstName) LIKE '%$q%' OR CONCAT_WS('',LastName,FirstName) LIKE '%$q%';");
 
-
-			$sql = $conn->query("SELECT ID,LastName, FirstName,Address,City,Parish,PhoneNumber, Status FROM tbljusticeinfo WHERE CONCAT_WS('',FirstName,LastName) LIKE '%$q%' OR CONCAT_WS('',LastName,FirstName) LIKE '%$q%' OR CONCAT_WS('',LastName,FirstName) LIKE '%$q%' OR CONCAT_WS('',LastName,FirstName) LIKE '%$q%' LIMIT $page, 20;");
+			$countjp = mysqli_num_rows($sql);
+			echo $countjp;
+			
 	
 			if ($sql->num_rows > 0) {
 				while ($row = $sql->fetch_assoc())
@@ -80,49 +165,7 @@ function UserInfo(){
 }
 }
 
-function Pagination(){
-include 'config/dbconn.php';
 
-
-if(isset($_GET['page'])){
-
-	$page = $_GET['page'];
-
-}else{
-
-	$page = "";
-
-}
-
-if($page == ""|| $page == 1)
-{
-	$page_1 = 0;
-}else{
-
-	$page_1 = ($page * 5) - 5;
-}
-// Query to find out how many Justice of the Peace exist in search
-			$jpcount = "SELECT * FROM  tbljusticeinfo";
-			$result = mysqli_query($conn,$jpcount);
-			$countjp = mysqli_num_rows($result);
-			$countjp = ceil($countjp / 100);
-			echo $countjp;
-
-	echo '<div class="container">
-<nav aria-label="Page navigation example">
-  <ul class="pagination justify-content-center">';
-
-for($i=1; $i<= $countjp; $i++){
-
-	echo"
-	<li class='page-item'><a class='page-link' href='searchresults.php?page={$i}'>{$i}</a></li>";
-}
-echo '</ul>
-</nav></div>';
-
-
-
-}
 
 ?>
 

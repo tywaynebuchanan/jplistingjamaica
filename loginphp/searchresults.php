@@ -59,7 +59,7 @@ if(!isset($_SESSION['login_user'])){
 
 </body>
 
-<?php Pagination();?>
+
 
 <div class="footer-tm">
   <p>Footer</p>
