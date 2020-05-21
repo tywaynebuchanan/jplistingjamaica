@@ -6,12 +6,8 @@
       
 if(!isset($_SESSION['login_user'])){
   header("location:index.php");
-
 }
-
-
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <script src="js/script.js"></script>
@@ -34,8 +30,6 @@ if(!isset($_SESSION['login_user'])){
       <table class="table has-text-centered table-bordered table-sm table-hover" id="table" >
         <thead class="thead-light">
           <tr>
-
-          
             <th>Last Name</th>
             <th>First Name</th>
             <th>Address</th>
@@ -52,6 +46,14 @@ if(!isset($_SESSION['login_user'])){
  </div>
 </div>
 
+<footer class="footer bg-primary text-light text-center">
+  <div class="container">
+  <div class="row bg-primary">
+                <div class="col-lg-12">
+                    <p class="">Copyright &copy; MJGA 2020</p>
+                </div>
+            </div>
+  </footer>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

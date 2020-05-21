@@ -33,7 +33,7 @@
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="#">Kingston</a>
           <a class="dropdown-item" href="#">St Andrew</a>
-          <a class="dropdown-item active" href="stcatherine.php">St Catherine</a>
+          <a class="dropdown-item" href="stcatherine.php">St Catherine</a>
           <a class="dropdown-item" href="#">Clarendon</a>
           <a class="dropdown-item" href="#">Manchester</a>
           <a class="dropdown-item" href="#">St Elizabeth</a>
